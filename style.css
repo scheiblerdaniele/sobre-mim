@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+:root {
+    --cor0: #DCEAF2;
+    --cor1: #F2D8D5;
+    --cor2: #8C615D;
+    --cor3: #484B52;
+       
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    }
+
+body, html {
+        background-color: #393a3d;
+        font-family: 'Lato', sans-serif;
+}
+    
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: #333335;   
+    min-height: 50px; 
+}
+
+nav {
+   display: flex;
+   gap: 2rem; 
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: #F2D8D5;
+    transition: .3s;
+}
+
+.buttons {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.buttons:hover {
+    background-color: #484B52;
+    border: 1px solid #484B52;
+    transition: .3s;
+}
+
+main {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+main strong {
+    color:#d6aea9;
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+main a:hover {
+    color: #F2D8D5;
+    transition: .3s;
+}
+
+section#perfil {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+    min-height: 650px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 8px;
+}
+
+section#perfil > div#perfiltext {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+section > h2.titulo {
+    color: #8C615D;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+}
+
+.imagemperfil {
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+footer {
+    color: #8C615D;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #b59a98;
+}
+
+footer a:hover {
+    color: #8C615D;
+}
+
+
+
