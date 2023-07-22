@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+:root {
+    --cor0: #E1EFFC;
+    --cor1: #819db8;
+    --cor2: #BFA099;
+    --cor3: #BF7A87;
+    --cor4: #313439;
+    --cor5: #2d3035;
+    --cor6: #5e7488;
+
+    --fonte-padrao: 'Lato', sans-serif;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    }
+
+body {
+        background-color: var(--cor4);
+        font-family: var(--fonte-padrao);
+}
+    
+header {
+    background-color: var(--cor5);
+    min-height: 50px;
+    text-align: center;
+    padding: .8rem;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.304);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    
+}
+
+nav {
+   display: flex;
+   gap: 2rem; 
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+nav a:hover{
+    color: var(--cor1);
+    transition: .3s;
+}
+
+.buttons {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 10px;
+         
+}
+
+.buttons:hover {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    border: 1px solid var(--cor1);
+    transition: .3s;
+}
+
+main {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem;
+    justify-content: space-evenly;
+    
+}
+
+main strong {
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+main a:hover {
+    color: var(--cor6);
+    transition: .3s;
+}
+
+section#perfil {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+    min-height: 650px;
+}
+
+section > ul {
+    display: flex;
+    gap: 1.2rem; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+section#meusprojetos {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 3rem;
+    letter-spacing: 8px;
+    
+}
+
+section#perfil > div#perfiltext {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+section > h2.titulo {
+    color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 10px;
+}
+
+.imagemperfil {
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+footer {
+    color: var(--cor1);
+    background-color: var(--cor5);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 10px;
+    
+}
+
+footer > h2 {
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    display: flex;
+ gap: 2rem; 
+  
+}
+
+footer a:hover {
+    color: var(--cor1);
+    transition: .3s;
+
+}
+
+
+
