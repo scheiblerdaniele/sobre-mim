@@ -22,6 +22,8 @@
 body {
     background-color: var(--cor5);
     font-family: var(--fonte-padrao);
+    height: 100vh;
+   
 }
 
 a.externo::after {
@@ -30,9 +32,7 @@ a.externo::after {
 
 header {
     background-color: var(--cor4);
-    min-height: 150px;
     text-align: center;
-    padding-top: 0px;
 }
 
 nav {
@@ -71,92 +71,58 @@ nav > a:hover {
     transition: .3s;
 }
 
-section#principal {
+section {
+    padding: 3rem;
+}
+
+.principal {
     display: flex;
     justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
     align-items: center;
-    min-height: 550px;
-    padding: 20px;
-       
+    min-height: 500px;
 }
 
-section#principal > h1 > strong {
+h1 {
+    font-size: 4rem;
+    letter-spacing: 8px;   
+}
+
+strong {
     color: var(--cor1);
+    font-weight: bold;
 }
 
-section#principal > p {
-    font-family: var(--fonte-padrao);
-    font-size: 1.2em;
-    color: white;
-    max-width: 500px;
-    margin: auto;
-    padding-bottom: 50px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-section#principal > p > strong {
-    color: var(--cor1);
-}
-
-#fotoperfil {
+.imgprofile {
     border-radius: 50%;
     max-width: 300px;
-    display: block;
-    margin: auto;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.119);
-    margin: 10px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.315);
 }
 
-#fotobiologia {
+.imgquemsoueu {
     max-width: 300px;
-    display: block;
-    margin: auto;
     border-radius: 50%;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.096);
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.315);
+    margin: 20px;
 }
 
 main {
     font-family: var(--fonte-padrao);
+    color: white;
     background-color: var(--cor4);
-    color: white;
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 30px;
-    padding: 40px;
-    border-radius: 0px 0px 10px 10px;
-}
-
-main h1 {
-    color: white;
-    font-family: var(--fonte-padrao);
-    font-weight: normal;
-    font-size: 1.8em;
-    padding: 10px;
+      
 }
 
 main h2 {
     font-family: var(--fonte-padrao);
     color: var(--cor1);
-    font-size: 1.3em;
+    font-size: 1.5em;
+    text-transform: uppercase;
     font-weight: normal;
     text-indent: 8px;
     text-align: center;
-    padding: 10px;
-}
-
-main p {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 2em;
-    font-size: 1em;
-}
-
-main strong {
-    color: var(--cor1);
-    font-weight: bold;
+    padding: 15px;
 }
 
 main a {
@@ -172,6 +138,17 @@ main a:hover {
     color: var(--cor4);
 }
 
+.divquemsoueu {
+    background-color: var(--cor4);
+    padding: 6rem;  
+    text-align: justify;
+}
+
+.divconhecimentos {
+    background-color: var(--cor5);
+    padding: 6rem;
+}
+
 #lista {
     display: flex;
     gap: 2rem; 
@@ -181,30 +158,14 @@ main a:hover {
     
 }
 
-footer {
+.divmeusprojetos {
     background-color: var(--cor5);
-    color: white;
-    text-align: center;
-    font-size: 1em;
-    padding: 5px;
-    
+    padding: 6rem;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-    text-indent: 8px;
-}
-
-footer a:hover {
-    color: var(--cor1)
-}
-
-footer > h2 {
-    font-family: var(--fonte-padrao);
-    color: var(--cor1);
-    font-size: 1.3em;
-    font-weight: normal;
+footer {
+    background-color: #202327;
+    padding: 15px;
 }
 
 footer > p {
@@ -213,3 +174,14 @@ footer > p {
     font-size: 1em;
     text-indent: 8px;
 }
+
+footer > h2 {
+    font-family: var(--fonte-padrao);
+    color: var(--cor1);
+    font-size: 1.3em;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+
