@@ -15,8 +15,13 @@
 
     .imgquemsoueu {
         width: 150px;
-  
-} }
+        
+    } 
+     .terceirasessao {
+        width: 600px;
+              
+        
+}}
 @media screen and (min-width: 992px) {
     body {
         background-color: #2d3035; 
@@ -30,6 +35,10 @@
   
     .imgquemsoueu {
         width: 150px;
+        
 
+    .terceirasessao {
+        width: 600px;
+        
 }
-}
+} }

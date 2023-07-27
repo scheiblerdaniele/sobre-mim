@@ -131,26 +131,33 @@ a:hover {
 .imgprofile {
     background: var(--cor5);
     border-radius: 50%;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.205);
-    margin: 10px;
+    box-shadow: 3px 3px 3px #00000021;
+    margin: 0px;
     max-width: 300px;
     
 }
 
 section#quemsoueu {
     background-color: var(--cor4);
+}
+
+.terceirasessao {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     align-items: center;
+    max-width: 600px; 
+    text-align: justify;
+    margin-left: 25%;
 }
 
 .imgquemsoueu {
     background: var(--cor5);
+    display: block;
     border-radius: 50%;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.205);
-    margin: 10px; 
-    max-width: 200px;
+    box-shadow: 3px 3px 3px #00000021;
+    margin: 10px;
+    max-width: 150px;
+    align-items: center;
+    
 }
 
 .conhecimentos {
